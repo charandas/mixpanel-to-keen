@@ -3,6 +3,7 @@
 import os
 import urllib2
 import simplejson as json
+import keen
 
 from lib.mixpanel import Mixpanel
 from os.path import join, dirname
@@ -17,10 +18,12 @@ api = Mixpanel(
 )
 lines = api.request(['export'], {
     'from_date': '2015-08-01',
-    'to_date': '2015-08-26',
+    'to_date': '2015-08-7',
     'event' : ['ad-click'],
     'where': 'properties["network"] == "chi"'
 })
 
 for line in lines:
-    print(json.loads(line))
+    properties = json.loads(line)
+    print(properties)
+    keen.add_event('core', properties)
