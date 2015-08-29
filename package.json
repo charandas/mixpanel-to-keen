@@ -1,0 +1,24 @@
+{
+  "name": "mixpanel-to-keen",
+  "version": "0.0.1",
+  "description": "A package to import events from mixpanel to keen.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/charandas/mixpanel-to-keen.git"
+  },
+  "keywords": [
+    "keen",
+    "mixpanel",
+    "events"
+  ],
+  "author": "Charandas Batra-Daitch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charandas/mixpanel-to-keen/issues"
+  },
+  "homepage": "https://github.com/charandas/mixpanel-to-keen#readme"
+}
