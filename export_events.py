@@ -15,8 +15,8 @@ api = Mixpanel(
     api_secret = os.environ.get('MIXPANEL_API_SECRET'),
 )
 data = api.request(['export'], {
-	'from_date': '2015-08-22',
-	'to_date': '2015-08-26',
+    'from_date': '2015-08-22',
+    'to_date': '2015-08-26',
     'event' : ['ad-click'],
     'where': urllib2.quote('properties["network"] == "nyc"')
 })
