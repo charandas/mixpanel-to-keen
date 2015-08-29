@@ -21,7 +21,7 @@ KEEN_MASTER_KEY="your-master-key"
 2. `pip install` to get all the dependencies listed in `requirements.txt`.
 3. `python export-events.py`
 
-## Mixpanel Client Library included under `./lib`
+## Mixpanel Client [Library](./lib/mixpanel.py)
 
 This is just [downloaded](https://mixpanel.com/site_media/api/v2/mixpanel.py) 
 off of mixpanel's site. This client library doesn't do much
