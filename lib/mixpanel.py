@@ -22,10 +22,7 @@ import hashlib
 import urllib
 import urllib2
 import time
-try:
-    import json
-except ImportError:
-    import simplejson as json
+import simplejson as json
 
 class Mixpanel(object):
 
@@ -54,7 +51,7 @@ class Mixpanel(object):
         request = urllib2.urlopen(request_url, timeout=120)
         data = request.read()
 
-        return json.loads(data)
+        return data.splitlines()    
 
     def unicode_urlencode(self, params):
         """
